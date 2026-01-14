@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Template</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* LEFT SECTION */
+        .left {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: #ccc;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .left h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .left p {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 5px;
+        }
+
+        .left ul {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .left ul li {
+            margin-bottom: 8px;
+        }
+
+        /* RIGHT SECTION */
+        .right {
+            padding: 30px;
+        }
+
+        .right h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .right h3 {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .right-section {
+            margin-bottom: 25px;
+        }
+
+        .right-section h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .right-section p {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .download-btn {
+            padding: 10px 20px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .download-btn:hover {
+            background: #1a252f;
+        }
+
+        @media(max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <div class="profile-pic"></div>
+
+        <h2>Your Name</h2>
+        <p>Web Developer</p>
+
+        <div class="section-title">Contact</div>
+        <ul>
+            <li>📧 email@example.com</li>
+            <li>📞 +123 456 7890</li>
+            <li>📍 City, Country</li>
+        </ul>
+
+        <div class="section-title">Skills</div>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React / Angular</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+        </ul>
+
+        <div class="section-title">Languages</div>
+        <ul>
+            <li>English</li>
+            <li>Spanish</li>
+        </ul>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <h1>Your Name</h1>
+        <h3>Front-End Developer</h3>
+
+        <div class="right-section">
+            <h2>Profile</h2>
+            <p>
+                Motivated web developer with experience in creating responsive
+                and user-friendly websites using modern technologies.
+            </p>
+        </div>
+
+        <div class="right-section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Computer Science</strong></p>
+            <p>University Name (2020 - 2024)</p>
+        </div>
+
+        <div class="right-section">
+            <h2>Experience</h2>
+            <p><strong>Web Developer Intern</strong></p>
+            <p>Company Name (2023)</p>
+            <p>• Developed responsive websites</p>
+            <p>• Fixed UI/UX bugs</p>
+        </div>
+
+        <button class="download-btn" onclick="downloadCV()">Download CV</button>
+    </div>
+
+</div>
+
+<script>
+    function downloadCV() {
+        alert("Download CV feature coming soon!");
+    }
+</script>
+
+</body>
+</html>
